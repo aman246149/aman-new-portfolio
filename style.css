@@ -1,12 +1,14 @@
 
-*{
-    margin: 0;
-    padding: 0;
+html, body {
+    padding:0;
+    margin:0;
     box-sizing: border-box;
-}
+   }
 
 body{
     overflow: hidden;
+    background-color: rgb(63,0,220);
+    color: white;
 }
 
 .icon_container{
@@ -21,6 +23,10 @@ body{
     font-weight: 200;
     font-size: x-large;
     transition: all .5s ease-in-out;
+    z-index: 10000;
+    min-width: 85px;
+    min-height:100vh;
+
 }
 
 .toggleContainer{
@@ -60,6 +66,12 @@ body{
     align-items: center;
 }
 
+ .nav__icon{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .innerIconContainer >ion-icon{
     padding-left: 20px;
 }
@@ -72,26 +84,37 @@ body{
     display: flex;
 }
 
-.header{
+.content{
+    /* position: relative; */
+}
 
-    background-color: rgb(18,25,44);
-width: 95vw;
+.header{
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgb(18,25,44);
+width: 100vw;
 height: 5vh;
 overflow: hidden;
 transition: all .5s ease-in-out;
 }
 .toggleheader{
+    top: 0;
+left: 0;
+    position: absolute;
+    top: 0;
     background-color: rgb(18,25,44);
     height: 5vh;
-    width: 82vw;
+    width: 100vw;
     transition: all .5s ease-in-out;
 
 }
 
 .midcontainer{
-    height: 100vh;
+    /* height: 100vh; */
+    width: 100%;
     /* margin-top: 200px; */
-    padding-top: 140px;
+    padding-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -100,7 +123,7 @@ transition: all .5s ease-in-out;
 }
 
 .leftpart{
-    height: 55%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -112,7 +135,8 @@ transition: all .5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 40%;
+    margin-bottom: 20px;
+    width: 42%;
 }
 
 
@@ -179,3 +203,111 @@ a{
 a:visited { color: white; }
 
 a:hover { color: white; }
+
+
+@media only screen and (max-width: 1145px) {
+    .middlepart h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 50px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+    .leftpart{
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .middlepart h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 42px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+    .toggleContainer{
+        width: 500px;
+    }
+    .innerIconContainer h5{
+        font-size: medium;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    
+    .middlepart h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 30px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+    .midcontainer{
+        flex-direction: column;
+        /* width: 100vw; */
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+       
+    .middlepart{
+        width: 80%;
+    }
+
+    .leftpart{
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-grad{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .toggleContainer{
+        width: 500px;
+    }
+
+    .innerIconContainer h5{
+        font-size: medium;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+  
+    .innerIconContainer h5{
+        font-size: medium;
+    }
+    .middlepart h1{
+        font-size: 20px;
+        
+    
+    }
+    
+    .midcontainer{
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 5px solid red;
+    }
+
+    .leftpart{
+        height: 25vh;
+    }
+
+    .toggleContainer{
+        width: 500px;
+    }
+
+   
+
+}
+
