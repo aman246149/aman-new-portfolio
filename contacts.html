@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts.css">
 </head>
 <body>
     
@@ -90,31 +91,35 @@
 <div class="content">
     <div class="header"></div>
 
-    <div class="midcontainer" id="particles-js">
-        <div class="leftpart">
-            <a href="https://github.com/aman246149"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://www.linkedin.com/in/aman-singh-19723616a/"><ion-icon name="logo-linkedin"></ion-icon></a>
-           <a href="mailto:amanthapliyal14@gmail.com"> <ion-icon name="mail-outline"></ion-icon> </a>
-              
-          </div>
-
-        <div class="middlepart">
-                <h1>Hi, I'am Aman <br>
-                Turning Your Beautifull Design Into Code.
-                </h1><br>
-                <span>Web Developer Having</span><br>
-                <p>Good Level Expereice in web development
-                    and problem solving Skills.
-                </p>
-
-                <button class="btn-grad"><a href="#">Contact Me</a></button>
-
-
+    <section>
+        <div id="container">
+          <form action="https://formspree.io/f/mnqlbwno" id="test-form" method="POST">
+    
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName">
+            </div>
+    
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName">
+            </div>
+    
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email">
+            </div>
+    
+            <div class="form-group">
+              <label for="massage">Message</label>
+              <textarea name="massage" id="massage" rows="10" maxlength="200"></textarea>
+            </div>
+    
+            <button type="submit" id="test-form-submit">Submit</button>
+          </form>
         </div>
-
-       
-
-    </div>
+        <div id="status"></div>
+      </section>
 </div>
    </div>
 
@@ -122,5 +127,6 @@
 
 
     <script src="app.js"></script>
+    <script src="contacts.js"></script>
 </body>
 </html>
