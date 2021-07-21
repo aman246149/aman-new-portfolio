@@ -137,6 +137,7 @@ left: 0;
     align-items: flex-start;
     margin-bottom: 20px;
     width: 42%;
+    
 }
 
 
@@ -311,3 +312,82 @@ a:hover { color: white; }
 
 }
 
+@media only screen and (max-width: 540px) {
+  
+     
+    .middlepart h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 30px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+    .midcontainer{
+        flex-direction: column;
+        /* width: 100vw; */
+        justify-content: center;
+        padding-left: 10px;
+        padding-top: 40px;
+    }
+
+       
+    .middlepart{
+        width: 80%;
+    }
+
+    .leftpart{
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-grad{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .toggleContainer{
+        width: 500px;
+    }
+
+    .innerIconContainer h5{
+        font-size: medium;
+    }
+
+}
+
+
+@media only screen and (max-width: 280px) {
+
+  .midcontainer{
+      padding-top: 50px;
+  }
+    
+    .middlepart h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media only screen and (max-width: 1118px) {
+
+  .midcontainer{
+      padding-top: 30px;
+  }
+    
+    .middlepart h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+}
+
+.leftpart ion-icon{
+    cursor: pointer;
+}

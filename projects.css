@@ -1,0 +1,83 @@
+
+html, body {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   }
+
+body{
+    overflow: hidden;
+    background-color: rgb(63,0,220);
+}
+
+
+.card a{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+
+}
+.card p{
+    font-family: 'Raleway', sans-serif;
+
+}
+#header-pro{
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 5px;
+
+}
+
+.innermidcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 86vh;
+
+}
+.card{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    
+}
+
+.card ion-icon{
+    font-size: 80px;
+    align-self: center;
+    color: rgb(218, 186, 7);
+}
+
+.divider{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+}
+
+@media only screen and (max-width: 504px) {
+    .innermidcontainer{
+        display: inline-block;
+    }
+}
