@@ -9,6 +9,11 @@
     overflow-y: scroll;
 
   }
+
+  .problemsolve{
+    text-align: center;
+    padding-top: 50px;
+  }
   
   main {
     display: grid;
