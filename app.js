@@ -27,7 +27,7 @@ window.addEventListener('resize', function(event){
 // }
 
 function toggle(){
- icon_container.addEventListener('click',()=>{
+ icon_container.addEventListener('click',(e)=>{
     
          
          header.className="toggleheader";
